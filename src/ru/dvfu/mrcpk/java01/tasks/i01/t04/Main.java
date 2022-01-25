@@ -9,12 +9,15 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(
                 "Среднее значение: " +
-                averange(30,40,50)
+                averange(20,40,50)
         );
     }
 
     //Метод расчета среднего арифметического значения
     public static double averange(int a, int b, int c){
-        return 0;
+
+        double z = (a + b + c) / 3;
+
+        return z;
     }
 }
