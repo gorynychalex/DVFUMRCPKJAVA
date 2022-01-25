@@ -1,7 +1,6 @@
 package ru.dvfu.mrcpk.java01.example08.array;
 
 import java.util.Arrays;
-
 /**
  * (Bubble Sort)
  * Алгоритм состоит из повторяющихся проходов по сортируемому массиву.
@@ -17,8 +16,12 @@ public class BubbleSort {
 
     public static int[] sort1(int[] array){
 
-        for (int j = 0; j < array.length-2; j++) {
-            for (int i = 0; i < array.length - 1; i++) {
+        for (int j = 0;
+             j < array.length-2;
+             j++) {
+            for (int i = 0;
+                 i < array.length - 1;
+                 i++) {
                 //Перемена мест - можно вынести в отдельный метод
                 if (array[i] > array[i + 1]) {
                     int tmp = array[i];
