@@ -5,13 +5,13 @@ public class Point2d {
 
     public Point2d(){}
 
-    public Point2d(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
-
     public Point2d(int x) {
         this.x = x; this.y = x;
+    }
+
+    public Point2d(int x, int y) {
+        this(x);
+        this.y = y;
     }
 
     public int getX() {

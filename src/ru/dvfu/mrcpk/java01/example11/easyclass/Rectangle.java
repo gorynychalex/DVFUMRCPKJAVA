@@ -1,9 +1,10 @@
 package ru.dvfu.mrcpk.java01.example11.easyclass;
 
-public class Rectangle {
+import java.io.Serializable;
+
+public class Rectangle extends GeometryShape implements GeometryMove, Serializable {
     int a;
     int b;
-    Point2d point;
 
     public Rectangle(int a) {
         this.a = a; this.b = a;
@@ -16,4 +17,25 @@ public class Rectangle {
         this.point = point;
     }
 
+    @Override
+    public double perimeter() {
+        return 2*(this.a+this.b);
+    }
+
+    @Override
+    public double square() {
+        return this.a*this.b;
+    }
+
+    @Override
+    public void draw() {
+
+        System.out.println("Рисуем прямоугольник");
+
+    }
+
+    @Override
+    public void moveTo(int x, int y) {
+
+    }
 }
