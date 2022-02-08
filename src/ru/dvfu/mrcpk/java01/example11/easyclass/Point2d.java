@@ -1,7 +1,8 @@
 package ru.dvfu.mrcpk.java01.example11.easyclass;
 
 public class Point2d {
-    private int x, y;
+    private int x;
+    private int y;
 
     public Point2d(){}
 
@@ -28,5 +29,10 @@ public class Point2d {
 
     public void setY(int y) {
         this.y = y;
+    }
+
+    @Override
+    public String toString() {
+        return "x = " + x + ", y = " + y;
     }
 }

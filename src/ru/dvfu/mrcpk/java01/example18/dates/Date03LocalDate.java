@@ -12,10 +12,13 @@ public class Date03LocalDate {
 
         LocalDate localDateNow = LocalDate.now();
 
-        System.out.println("Вывод даты с форматированием по умолчанию: " + localDateNow);
+        System.out.println("Вывод даты с форматированием по умолчанию: "
+                + localDateNow);
 
-        DateTimeFormatter formatterDate = DateTimeFormatter.ofPattern("MM dd yyyy");
-        System.out.println("Форматированный вывод даты: " + formatterDate.format(localDateNow));
+        DateTimeFormatter formatterDate =
+                DateTimeFormatter.ofPattern("MM dd yyyy");
+        System.out.println("Форматированный вывод даты: "
+                + formatterDate.format(localDateNow));
 
 
         LocalDate date1 = LocalDate.parse("01 02 2015", formatterDate);

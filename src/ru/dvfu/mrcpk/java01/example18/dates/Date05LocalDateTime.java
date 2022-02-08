@@ -15,7 +15,8 @@ public class Date05LocalDateTime {
         LocalTime time = LocalTime.now();
         LocalDateTime dateTime = LocalDateTime.of(date, time);
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM dd, yyyy, hh:mm");
+        DateTimeFormatter formatter = DateTimeFormatter
+                .ofPattern("MMMM dd, yyyy, hh:mm");
         System.out.println(dateTime.format(formatter));
         System.out.println(formatter.format(dateTime));
 

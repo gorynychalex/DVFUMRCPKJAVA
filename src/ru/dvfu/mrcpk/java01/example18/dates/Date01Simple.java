@@ -18,7 +18,6 @@ public class Date01Simple {
         Date d1 = sdf.parse(s);
         Date d2 = sdf.parse("29-jun-1999");
 
-        System.out.println(Calendar.getInstance().getTime());
         System.out.println(sdf.format(d1));
         System.out.println(d1.before(d2));
     }

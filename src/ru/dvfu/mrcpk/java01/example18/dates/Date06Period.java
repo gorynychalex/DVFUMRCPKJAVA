@@ -1,11 +1,15 @@
 package ru.dvfu.mrcpk.java01.example18.dates;
 
+import javax.management.timer.Timer;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 
 public class Date06Period {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+
+        LocalTime.ofSecondOfDay(5000);
+        System.out.println(LocalTime.ofSecondOfDay(5000));
 
         LocalDate date = LocalDate.of(2015, 1, 20);
         LocalTime time = LocalTime.of(6,15);
@@ -42,5 +46,9 @@ public class Date06Period {
         System.out.println(date1.format(DateTimeFormatter.ISO_DATE)); // 2015-01-02
 
         System.out.println(time1); // 11:22
+    }
+
+    public static void method(){
+        System.out.println("Выполнение задачи!");
     }
 }

@@ -16,5 +16,7 @@ public class Point2dUse {
         System.out.println("Точка 1: ("
                 + point1.getX() + ", " + point1.getY() + ");"
         );
+
+        System.out.println(point1);
     }
 }
