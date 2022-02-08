@@ -9,7 +9,7 @@ public class Demo02BufferedFileInputStream {
         FileInputStream inputStream = new FileInputStream("/home/gorynych/java/file02.txt");
 
         //Буферизованный поток, по N-байт
-        BufferedInputStream bufferedInputStream = new BufferedInputStream(inputStream, 1000);
+        BufferedInputStream bufferedInputStream = new BufferedInputStream(inputStream, 1024);
 
         // Размер данных в байтах
         int dataLength = bufferedInputStream.available();

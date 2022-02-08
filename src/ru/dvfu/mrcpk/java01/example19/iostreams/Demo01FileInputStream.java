@@ -9,10 +9,11 @@ import java.io.IOException;
  */
 
 public class Demo01FileInputStream {
+
     public static void main(String[] args) throws IOException {
 
-        // Поток на чтение байт из файла (если под Windows, должно быть "c:/test/data1.txt")
-        FileInputStream inputStream = new FileInputStream("/home/gorynych/java/data1.txt");
+        // Поток на чтение байт из файла (если под Windows, должно быть "c:/java/data1.txt")
+        FileInputStream inputStream = new FileInputStream("/home/gorynych/java/file03.txt");
 
         // Размер данных в байтах
         int dataLength = inputStream.available();
