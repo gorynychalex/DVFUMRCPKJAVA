@@ -1,6 +1,7 @@
 package ru.dvfu.mrcpk.java01.example19.serializable;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 

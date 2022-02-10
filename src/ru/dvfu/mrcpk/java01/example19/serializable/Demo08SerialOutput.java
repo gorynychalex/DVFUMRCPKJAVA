@@ -15,6 +15,5 @@ public class Demo08SerialOutput {
 
         objectOutputStream.close();
         fileOutputStream.close();
-
     }
 }
